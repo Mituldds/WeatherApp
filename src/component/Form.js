@@ -26,7 +26,7 @@ const Form = () => {
           name="firstname"
           required
           value={user.firstname}
-          onChange={(e) => handleInputs(e)}
+          onChange={handleInputs}
         />
         <br />
         <label htmlFor="lastname">Last name: </label>
