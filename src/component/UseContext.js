@@ -1,9 +1,9 @@
 import React from "react";
-import MyContex from "./MyContext";
+// import MyContex from "./MyContext";
 
 const MyContext = React.createContext();
 
-const UseCotext = () => {
+const UseContext = () => {
   const dataValue = {
     id: "1",
     name: "joy",
@@ -12,11 +12,11 @@ const UseCotext = () => {
 
   return;
 
-  <>
-    <MyContex.Provider value={dataValue}>
-      <ParentComp />
-    </MyContex.Provider>
-  </>;
+  // <>
+  //   <MyContex.Provider value={dataValue}>
+  //     <ParentComp />
+  //   </MyContex.Provider>
+  // </>;
 };
 
 const ParentComp = () => {
@@ -61,4 +61,4 @@ const childB = () => {
   }
 
 
-export default UseCotext;
+export default UseContext;

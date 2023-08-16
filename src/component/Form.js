@@ -14,7 +14,7 @@ const Form = () => {
     let name = e.target.name; // here, name as a all fields attributes name like firstname, lastname etc.
     let value = e.target.value; // value as all attributes name value like  fist name value , lastname value etc.
 
-    setUser({ ...user, [name]: value });
+    setUser({ ...user, [name] : value });
   };
 
   return (
